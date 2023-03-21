@@ -1,0 +1,87 @@
+# Artifact Hub package metadata file
+version: 0.1.0
+name: python
+displayName: Python
+createdAt: 2022-08-22T00:00:00Z
+description:  Policies to protect Python installations
+category: security
+license: Apache-2.0
+homeURL: https://github.com/kubearmor/policy-templates/tree/main/python
+keywords:
+  - kubearmor
+  - policy
+  - python
+links:
+  - name: Source
+    url: https://github.com/kubearmor/policy-templates/tree/main/python
+changes:
+  - kind: added
+    description: Initial release
+provider:
+  name: KubeArmor community
+readme: |-
+  This package contains the following policies:
+
+  ## `network`
+
+  - cnp-python-hardening-policy-allow-only-port-20
+
+  Python hardening rule to allow FTP File transfers via port 20
+
+  - cnp-python-hardening-policy-allow-only-port-23
+
+  Python hardening rule to allow Telnet Command lines via port 23
+
+  - cnp-python-hardening-policy-allow-only-port-25
+
+  Python hardening rule to allow SMTP Sending email via port 25
+
+  - cnp-python-hardening-policy-allow-only-port-70
+
+  Python hardening rule to allow Gopher Document transfers via port 70
+
+  - cnp-python-hardening-policy-allow-only-port-80
+
+  Python hardening rule to allow HTTP webpages via port 80
+
+  - cnp-python-hardening-policy-allow-only-port-110
+
+  Python hardening rule to allow POP3 Fetching email via port 110
+
+  - cnp-python-hardening-policy-allow-only-port-119
+
+  Python hardening rule to allow NNTP Usenet news via port 119
+
+  - cnp-python-hardening-policy-allow-only-port-143
+
+  Python hardening rule to allow IMAP4 Fetching email via port 143
+
+  ## `system`
+
+  - ksp-cve-2021-3426-python-pydoc
+
+  - ksp-deny-rce-on-flask-app-pod
+
+  - ksp-python-cve-2021-39182
+
+  - ksp-python-hardening-rule-audit-cryptography-package
+
+  - ksp-python-hardening-rule-audit-django-package
+
+  - ksp-python-hardening-rule-audit-ipaddress-package
+
+  - ksp-python-hardening-rule-audit-jinja2-package
+
+  - ksp-python-hardening-rule-audit-pillow-package
+
+  - ksp-python-hardening-rule-audit-pip
+
+  - ksp-python-hardening-rule-audit-pygments-package
+
+  - ksp-python-hardening-rule-audit-pyyaml-package
+
+  - ksp-python-hardening-rule-audit-requests-package
+
+  - ksp-python-hardening-rule-audit-url-lib
+
+  - ksp-python-pip-cve-2019-20916

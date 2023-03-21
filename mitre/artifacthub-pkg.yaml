@@ -1,0 +1,233 @@
+# Artifact Hub package metadata file
+version: 0.1.0
+name: mitre
+displayName: Mitre
+createdAt: 2022-09-23T00:00:00Z
+description: Policies based on input from Mitre
+category: security
+license: Apache-2.0
+homeURL: https://github.com/kubearmor/policy-templates/tree/main/mitre
+keywords:
+  - kubearmor
+  - policy
+  - mitre
+links:
+  - name: Source
+    url: https://github.com/kubearmor/policy-templates/tree/main/mitre
+changes:
+  - kind: added
+    description: Initial release
+provider:
+  name: KubeArmor community
+readme: |-
+  This package contains the following policies:
+
+  ## `network`
+
+  - cnp-mitre-egress-ftp-rule
+
+  This policy will block the outbound FTP connections
+
+  - cnp-mitre-ingress-ftp-rule
+
+  This policy will block the inbound FTP connection
+
+  - cnp-mitre-dns-egress-allow-only-matchname
+
+  dns-egress allow only matchnames
+
+  - cnp-mitre-egress-t1071-ftp-rule
+
+  Policy to Deny FTP Outgoing Traffic
+
+  - cnp-mitre-egress-deny-external-communication-from-mysql-pod
+
+  To block all external world communication from mysql pod and limit it to specific pods
+
+  - cnp-mitre-ingress-allow-mysql-pod-communication-on-3306
+
+  To allow communication to mysql pods from specific pods on port 3306
+
+  - cnp-mitre-t1071-ingress-ftp-rule
+
+  Policy to Deny FTP Incoming Traffic
+
+  - cnp-mitre-postgresql-port
+
+  This Policy will Protect PostgreSQL External Access from unknown IP's
+
+  - ccnp-mitre-t1041-deny-interpreted-procs-outbound-network-activity
+
+  This policy will deny any outbound network activity performed by any interpreted program (perl, python, ruby, etc.)
+
+  - cnp-mitre-t1210-ingress-block-helm-tiller-endpoint
+
+  Policy to Deny Access to tiller endpoint on port 44134
+
+  - cnp-mitre-t1496-egress--crypto-miner-ip-blocking
+
+  The policy will block crypto-miner hijacking
+
+  - cnp-mitre-t1552-block-cloud-instance-metadata-access-from-pods
+
+  The policy will block access to cloud metadata ips from containers
+
+  - cnp-mitre-t1571-ingress
+
+  Adversaries may communicate using a protocol and port paring that are typically not associated. Block all non-standard ports and protocol
+
+  - cnp-mitre-t1571-mysql-ingress
+
+  Allow ingress communication only through standard ports of MySQL pods
+
+  - cnp-mitre-t1571-postgresql-ingress
+
+  Allow ingress communication only through standard ports of PostgresSQL
+
+  ## `system`
+
+  - hsp-create-account-create-local-account
+
+  - hsp-mitre-create-or-modify-system-process-systemd-service
+
+  - hsp-mitre-t1053-003-scheduled-task-job-crontab
+
+  - hsp-mitre-t1548-setuid-setgid
+
+  - hsp-mitre-persistence-bash-profile-audit
+
+  - hsp-mitre-process-injection-proc-mem
+
+  - hsp-mitre-ptrace-syscall
+
+  - hsp-mitre-sudo-caching
+
+  - hsp-mitre-t1037-004
+
+  - hsp-mitre-t1210-audit-kubernetes-manifest
+
+  - hsp-mitre-t1543-002
+
+  - hsp-mitre-tactic-defense-evasion
+
+  - hsp-network-service-scanning
+
+  - hsp-package-repos-t1059
+
+  - hsp-persistence-blis-rc-scripts
+
+  - hsp-rename-utilities
+
+  - hsp-ubuntu-proc-path-block
+
+  - ksp-defense-evasion-deobfuscate
+
+  - ksp-mitre-persistence-bash-profile
+
+  - ksp-block-mysql-dump-in-pods
+
+  - ksp-block-remote-copy-processes
+
+  - ksp-block-sub-processes-of-netcat
+
+  - ksp-block-untrusted-shell-execution
+
+  - ksp-mitre-tactic-persistence-boot-or-logon-autostart-execution-kernel-modules-and-extensions
+
+  - ksp-check-log-clearing
+
+  - ksp-restrict-access-mysql-config
+
+  - ksp-defense-evasion-modify-system-image
+
+  - ksp-detect-k8s-client-exec-in-container
+
+  - ksp-discovery-account-discovery-local-account
+
+  - ksp-discovery-process-discovery
+
+  - ksp-mitre-tactic-impair-defence
+
+  - ksp-mitre-t1053-scheduled-task-job-at
+
+  - ksp-mitre-t1548-001-setuid-setgid
+
+  - ksp-mitre-t1053-persistence-boot-or-logon-autostart-execution-kernel-modules-and-extensions
+
+  - ksp-mitre-kinsing-cryptomining-malware-block
+
+  - ksp-mitre-non-application-layer-protocol
+
+  - ksp-mitre-t1053-tactic-persistence-create-account-local-account
+
+  - ksp-mitre-t1053-persistence-external-remote-services
+
+  - ksp-mitre-pgsql-audit-non-pgsql
+
+  - ksp-mitre-cve-2020-1707-postgres-password-dumping
+
+  - ksp-mitre-postgres-cve-2016-1255
+
+  - ksp-restrict-access-mysql-server-config
+
+  - ksp-mitre-system-file-analysis
+
+  - ksp-mitre-t1082-tactic-discovery-system-owner-user-discovery
+
+  - ksp-mitre-t1046-network-service-scanning
+
+  - ksp-mitre-t1057
+
+  - ksp-mitre-t1059.yaml
+
+  - ksp-mitre-t1070-file-deletion
+
+  - ksp-mitre-t1087-001
+
+  - ksp-mitre-t1210-audit-hostname-env-token-discovery
+
+  - ksp-mitre-t1222-002
+
+  - ksp-mitre-t1610-tactic-execution-blocking-docker
+
+  - ksp-mitre-tactic-credential-access-password-dumping
+
+  - ksp-mitre-tactic-defence-evasion-hidden-files-directories
+
+  - ksp-mitre-tactic-defense-evasion-root-certificate
+
+  - ksp-mitre-tactic-defense-evasion
+
+  - ksp-mitre-tactic-execution-remote-code-exec-in-container
+
+  - ksp-mitre-tactic-presistence-kernel-modules
+
+  - ksp-mitre-tactic-scheduled-job-analysis
+
+  - ksp-mitre-tactic-t1070-002-defense-evasion-clear-system-log
+
+  - ksp-network-service-scanning
+
+  - ksp-persistence-blis-rc-scripts
+
+  - ksp-create-or-modify-system-process-systemd-service
+
+  - ksp-mitre-tactic-persistence-createaccount-localaccount
+
+  - ksp-mitre-tactic-persistence-external-remote-services
+
+  - ksp-mitre-tactic-postgres-pg-dump
+
+  - ksp-postgresql-config-directory
+
+  - ksp-mitre-tactic-privilege-escalation-shared-object
+
+  - ksp-psql-block
+
+  - ksp-scheduled-job-analysis
+
+  - ksp-system-file-analysis
+
+  - ksp-mitre-tactic-discovery-system-owner-user-discovery
+
+  - ksp-mitre-tactic-credential-access-unsecured-credentials-private-keys

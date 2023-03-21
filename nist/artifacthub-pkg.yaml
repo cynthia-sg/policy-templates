@@ -1,0 +1,295 @@
+# Artifact Hub package metadata file
+version: 0.1.0
+name: nist
+displayName: Nist
+createdAt: 2022-09-08T00:00:00Z
+description: Policies based on input from Nist
+category: security
+license: Apache-2.0
+homeURL: https://github.com/kubearmor/policy-templates/tree/main/nist
+keywords:
+  - kubearmor
+  - policy
+  - nist
+links:
+  - name: Source
+    url: https://github.com/kubearmor/policy-templates/tree/main/nist
+changes:
+  - kind: added
+    description: Initial release
+provider:
+  name: KubeArmor community
+readme: |-
+  This package contains the following policies:
+
+  ## `network`
+
+  - cnp-nist-ac-3-3-limit-pod-egress
+
+  After applying the policy, This pod can only access other pods within the Namespace
+
+  - cnp-nist-ac-3-3-limit-pod-ingress
+
+  After applying the policy, This pod only allow connections from inside Namespace
+
+  - cnp-nist-ac-4-1-egress-allow-communication-between-associated-entities
+
+  NIST AC-4(1) Allow data transfer between associated entities outbound
+
+  - cnp-nist-ac-4-1-ingress-allow-communication-between-associated-entities
+
+  NIST AC-4(1) Allow data transfer between associated entities inbound
+
+  - cnp-nist-ac-4-2-si-4-18-egress-deny-access-to-cloud-metadata-service-from-container
+
+  NIST AC-4(2) SI-4(18) Deny contact to cloud metadata service from container
+
+  - cnp-nist-ac-4-7-egress-deny-all-outbound-commincation-except-dns
+
+  NIST AC-4(7) Information Flow Enforcement | One-way Flow Mechanisms | allow only ingress
+
+  - cnp-nist-ac-4-7-ingress-deny-all-inbound-commincation
+
+  NIST AC-4(7) Information Flow Enforcement | One-way Flow Mechanisms | allow only egress
+
+  - cnp-nist-ac-4-10-ingress-deny-nodeport-communication
+
+  NIST AC-4(10) Deny nodeport communications
+
+  - cnp-nist-ac-4-17-egress-allow-only-authorized-service-and-port
+
+  NIST AC-4(17) Allow only authorized service and port communication outbound
+
+  - cnp-nist-ac-4-17-ingress-allow-only-authorized-service-and-port
+
+  NIST AC-4(17) Allow only authorized service and port communication inbound
+
+  - cnp-nist-ca-1-allow-only-internal-connections
+
+  Allow only internal connections. Block external connections
+
+  - cnp-nist-cm-7-1-least-func-periodic-review
+
+  Prohibit or restrict the use of the default ports open in containers
+
+  - cnp-nist-ia-8-2-acceptance-of-external-authenticators
+
+  NIST IA-8(2)/SI-4(4) This Policy will Protect from External Access to and from unknown malicious IPs
+
+  - cnp-nist-sc-7-5-ingress-allow-communication-between-associated-entities
+
+  NIST-SC-7(5), Allow data transfer between associated entities inbound
+
+  - cnp-nist-sc-7-5-limit-pod-ingress
+
+  NIST-SC-7(5), After applying the policy, This pod only allow connections from inside Namespace
+
+  - cnp-nist-sc-7-11-restrict-incoming-communications-traffic
+
+  NIST-SC-7(11), Restricting incoming communications traffic
+
+  ## `system`
+
+  - hsp-ac-2-4-automated-audit-action
+
+  - hsp-ac-2-12-account-management-atypical-usage
+
+  - hsp-ca-7-4-continuous-monitoring-automation-support-for-monitoring
+
+  - hsp-cm-1-configuration-management-policy-and-procedures
+
+  - hsp-nist-ac-6-9-auditing-use-of-privileged-functions
+
+  - hsp-nist-ac-6-10-prohibit-non-privileged-users-from-executing-privileged-functions
+
+  - hsp-nist-ac-11-audit-sessionlock
+
+  - hsp-nist-au-3-audit-access-to-cmdline-file
+
+  - hsp-audit-access-to-log-files
+
+  - hsp-nist-au-3-audit-bash-config-files
+
+  - hsp-nist-au-3-audit-etc-dir
+
+  - hsp-nist-au-3-block-removal-of-log-files
+
+  - hsp-nist-ca-9-audit-untrusted-read-on-sensitive-files
+
+  - hsp-nist-cm-3-5-configuration-change-control-automated-security-response
+
+  - hsp-nist-cm-11-2-allow-user-installation-of-software-only-with-explicit-privileged-status
+
+  - hsp-nist-si-4-detect-execution-of-network-tools-on-host
+
+  - ksp-ac-2-4-automated-audit-action
+
+  - ksp-ac-2-12-account-management-atypical-usage
+
+  - ksp-ac-3-4-access-enforcement-discretionary-access-control-file
+
+  - ksp-ac-3-4-access-enforcement-discretionary-access-control-process
+
+  - ksp-ac-3-11-access-enforcement-restrict-access-to-specific-information-types
+
+  - ksp-ac-10-cred-change-audit
+
+  - ksp-au-10-non-repudiation-1
+
+  - ksp-au-10-non-repudiation-2
+
+  - ksp-audit-nist-7-untrusted-shell-execution-program
+
+  - ksp-audit-nist-cm-6-1-linux-config-files
+
+  - ksp-audit-nist-sc-23-session-authenticity
+
+  - ksp-block-nist-au-8-1-sc-45-1-timestamps-sync-time-zone
+
+  - ksp-block-nist-au-8-2-sc-45-2-secondary-sync-time-zone
+
+  - ksp-block-nist-cm-9-config-manage
+
+  - ksp-ca-7-4-continuous-monitoring-automation-support-for-monitoring
+
+  - ksp-cm-1-configuration-management-policy-and-procedures
+
+  - ksp-cm-7-4-least-functionality-nist
+
+  - ksp-cm-9-1-configuration-management
+
+  - ksp-cm-9-2-configuration-management
+
+  - ksp-cp-10-2-system-recovery-and-reconstitution
+
+  - ksp-nist-mp-5-1-media-access
+
+  - ksp-nist-3-cap-net-raw-block
+
+  - ksp-nist-ac-6-1-authorize-access-to-security-functions
+
+  - ksp-nist-ac-6-9-auditing-use-of-privileged-functions
+
+  - ksp-nist-ac-6-10-prohibit-non-privileged-users-from-executing-privileged-functions
+
+  - ksp-nist-ac-11-sessionlock-audit-logout-scripts
+
+  - ksp-nist-ac-12-1-sessions-audit
+
+  - ksp-nist-ac-17-3-ssh-audit
+
+  - ksp-nist-ac-17-4-remote-privileged-commands-audit
+
+  - ksp-nist-ac-18-1-network-audit
+
+  - ksp-nist-au-2-3-event-logging-audit
+
+  - ksp-nist-au-3-audit-access-to-cmdline-file
+
+  - ksp-nist-au-3-audit-access-to-log-files
+
+  - ksp-nist-au-3-audit-bash-config-files
+
+  - ksp-nist-au-3-audit-etc-dir
+
+  - ksp-nist-au-3-block-removal-of-log-files
+
+  - ksp-nist-au-6-1-process-integration-audit
+
+  - ksp-nist-au-6-7-permitted-actions-audit
+
+  - ksp-nist-au-7-audit-event-service-logs
+
+  - ksp-nist-au-9-audit-unauthorised-access-of-auditlog-file
+
+  - ksp-nist-au-12-audit-read-write-on-shell-configuration-files
+
+  - ksp-nist-au-12-audit-write-below-binary-directories
+
+  - ksp-nist-au-12-audit-write-below-monitored-directories
+
+  - ksp-nist-au-12-block-modification-of-shell-configuration-files
+
+  - ksp-nist-ca-3-net-icmp-audit
+
+  - ksp-nist-ca-3-net-tcp-audit
+
+  - ksp-nist-ca-3-net-udp-audit
+
+  - ksp-nist-ca-9-audit-untrusted-read-on-sensitive-files
+
+  - ksp-nist-cm-3-5-configuration-change-control-automated-security-response
+
+  - ksp-nist-cm-5-1-access-restrictions-for-change-automated-access-enforcement-and-audit-records
+
+  - ksp-nist-cm-5-3-cm-14-signed-components
+
+  - ksp-nist-cm-5-access-restrictions-for-change-bash-history
+
+  - ksp-nist-cm-7-2-least-func-prevent-auto-exec-block
+
+  - ksp-nist-cm-7-5-software-install
+
+  - ksp-nist-cm-8-3-automated-unauthorized-component-detection
+
+  - ksp-nist-cm-8-7-system-component-inventory-audit
+
+  - ksp-nist-cm-11-2-allow-user-installation-of-software-only-with-explicit-privileged-status
+
+  - ksp-nist-cp-2-8-critical-system-files
+
+  - ksp-nist-ia-3-3-dynamic-address-allocation-audit
+
+  - ksp-nist-ia-3-4-device-attestation-audit
+
+  - ksp-nist-mp-7-media-use
+
+  - ksp-nist-pam-files
+
+  - ksp-nist-pe-7-access-control-for-output-devices
+
+  - ksp-nist-ps-5-personnel-transfer
+
+  - ksp-nist-sa-10-5-developer-configuration-management
+
+  - ksp-nist-sc-6-audit-resource-allocation
+
+  - ksp-nist-sc-13-block-cryptograhy-key
+
+  - ksp-nist-sc-39-2-process-isolation
+
+  - ksp-nist-sc-24-fail-in-known-state
+
+  - ksp-nist-si-3-8-malicious-code-protection-detect-unauthorised-command
+
+  - ksp-nist-si-4-create-file-in-dev-dir
+
+  - ksp-nist-si-4-detect-acess-to-cron-job-files
+
+  - ksp-nist-si-4-detect-cron-job-process
+
+  - ksp-nist-si-4-detect-execution-of-network-tools-inside-container
+
+  - ksp-nist-si-4-detect-modify-add-cron-jobs
+
+  - ksp-nist-execute-package-management-process-in-container
+
+  - ksp-nist-si-4-mkdir-bin-dir
+
+  - ksp-nist-si-7-1-software-firmware-information-integrity-check
+
+  - ksp-nist-si-7-7-software-firmware-information-integrity-detection-response
+
+  - ksp-nist-si-16-memory-protection
+
+  - ksp-ra-5-4-vs-discoverable-information-os-block
+
+  - ksp-nist-remote-access-and-control
+
+  - ksp-sc-4-2-unauthorized-information-transfer
+
+  - ksp-sc-17-public-key-infrastructure-certificates
+
+  - ksp-sc-28-1-information-at-rest
+
+  - audit-the-system-level-information

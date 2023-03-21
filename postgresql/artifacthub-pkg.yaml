@@ -1,0 +1,27 @@
+# Artifact Hub package metadata file
+version: 0.1.0
+name: postgresql
+displayName: PostgreSQL
+createdAt: 2021-11-23T00:00:00Z
+description: Policies to protect PostgreSQL installations
+category: security
+license: Apache-2.0
+homeURL: https://github.com/kubearmor/policy-templates/tree/main/postgresql
+keywords:
+  - kubearmor
+  - policy
+  - postgresql
+links:
+  - name: Source
+    url: https://github.com/kubearmor/policy-templates/tree/main/postgresql
+changes:
+  - kind: added
+    description: Initial release
+provider:
+  name: KubeArmor community
+readme: |-
+  This package contains the following policies:
+
+  ## `system`
+
+  - ksp-postgresql-cve-2021-3677-unauthorized-modication-log-file

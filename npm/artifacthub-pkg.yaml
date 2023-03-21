@@ -1,0 +1,27 @@
+# Artifact Hub package metadata file
+version: 0.1.0
+name: npm
+displayName: NPM
+createdAt: 2022-04-14T00:00:00Z
+description: Policies to protect NPM
+category: security
+license: Apache-2.0
+homeURL: https://github.com/kubearmor/policy-templates/tree/main/npm
+keywords:
+  - kubearmor
+  - policy
+  - npm
+links:
+  - name: Source
+    url: https://github.com/kubearmor/policy-templates/tree/main/npm
+changes:
+  - kind: added
+    description: Initial release
+provider:
+  name: KubeArmor community
+readme: |-
+  This package contains the following policies:
+
+  ## `system`
+
+  - ksp-block-ua-parser-js-package

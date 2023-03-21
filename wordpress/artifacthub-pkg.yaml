@@ -1,0 +1,31 @@
+# Artifact Hub package metadata file
+version: 0.1.0
+name: wordpress
+displayName: Wordpress
+createdAt: 2022-04-19T00:00:00Z
+description: Policies that protect Wordpress installations
+category: security
+license: Apache-2.0
+homeURL: https://github.com/kubearmor/policy-templates/tree/main/wordpress
+keywords:
+  - kubearmor
+  - policy
+  - wordpress
+links:
+  - name: Source
+    url: https://github.com/kubearmor/policy-templates/tree/main/wordpress
+changes:
+  - kind: added
+    description: Initial release
+provider:
+  name: KubeArmor community
+readme: |-
+  This package contains the following policies:
+
+  ## `system`
+
+  - ksp-wordpress-packages-process-block
+
+  - ksp-wordpress-wp-cli-block-users
+
+  - ksp-wordpress-wp-config-block

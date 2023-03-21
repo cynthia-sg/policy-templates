@@ -1,0 +1,55 @@
+# Artifact Hub package metadata file
+version: 0.1.0
+name: nginx
+displayName: Nginx
+createdAt: 2022-08-29T00:00:00Z
+description: Policies that protect Nginx installations
+category: security
+license: Apache-2.0
+homeURL: https://github.com/kubearmor/policy-templates/tree/main/nginx
+keywords:
+  - kubearmor
+  - policy
+  - nginx
+links:
+  - name: Source
+    url: https://github.com/kubearmor/policy-templates/tree/main/nginx
+changes:
+  - kind: added
+    description: Initial release
+provider:
+  name: KubeArmor community
+readme: |-
+  This package contains the following policies:
+
+  ## `network`
+
+  - cnp-egress-nginx-hardening-rule-allow-only-port-25
+
+  Allow only SMTP Port 25
+
+  - cnp-egress-nginx-hardening-rule-allow-only-port-123
+
+  Allow only NTP Port 123
+
+  - cnp-ingress-nginx-hardening-policy-allow-only-get-on-port-80
+
+  Allow HTTP GET on Port 80
+
+  - cnp-ingress-nginx-hardening-policy-allow-only-head-on-port-80
+
+  Allow HTTP HEAD on Port 80
+
+  - cnp-ingress-nginx-hardening-policy-allow-only-post-on-port-80
+
+  Allow HTTP POST on Port 80
+
+  ## `system`
+
+  - ksp-nginx-hardening-rule-audit-nginx-reload
+
+  - ksp-nginx-hardening-rule-audit-nginx-stop
+
+  - ksp-nginx-hardening-rule-deny-iptable-binary
+
+  - ksp-nginx-hardening-rule-monitor-cache-access

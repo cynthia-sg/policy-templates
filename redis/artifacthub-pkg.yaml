@@ -1,0 +1,35 @@
+# Artifact Hub package metadata file
+version: 0.1.0
+name: redis
+displayName: Redis
+createdAt: 2022-09-23T00:00:00Z
+description: Policies that protect Redis installations
+category: security
+license: Apache-2.0
+homeURL: https://github.com/kubearmor/policy-templates/tree/main/redis
+keywords:
+  - kubearmor
+  - policy
+  - redis
+links:
+  - name: Source
+    url: https://github.com/kubearmor/policy-templates/tree/main/redis
+changes:
+  - kind: added
+    description: Initial release
+provider:
+  name: KubeArmor community
+readme: |-
+  This package contains the following policies:
+
+  ## `network`
+
+  - cnp-redis-ingress-deny-traffic-to-port-6379
+
+  Don't allow any outside traffic to the Redis port
+
+  ## `system`
+
+  - ksp-redis-hardening-rule-audit-redis-log-files
+
+  - ksp-redis-hardening-rule-audit-xautoclaim-command

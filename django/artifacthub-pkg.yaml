@@ -1,0 +1,61 @@
+# Artifact Hub package metadata file
+version: 0.1.0
+name: django
+displayName: Django
+createdAt: 2022-08-24T00:00:00Z
+description: Policies that protect Django deployments
+category: security
+license: Apache-2.0
+homeURL: https://github.com/kubearmor/policy-templates/tree/main/django
+keywords:
+  - kubearmor
+  - policy
+  - django
+links:
+  - name: Source
+    url: https://github.com/kubearmor/policy-templates/tree/main/django
+changes:
+  - kind: added
+    description: Initial release
+provider:
+  name: KubeArmor community
+readme: |-
+  This package contains the following policies:
+
+  ## `network`
+
+  - cnp-egress-django-allow-only-tcp-80
+
+  Allow connection only via tcp port 80
+
+  - cnp-egress-django-allow-only-tcp-443
+
+  Allow connections only via tcp port 443
+
+  - cnp-egress-django-allow-only-udp-53
+
+  Allow only UDP connection via port 53
+
+  - cnp-egress-django-hardening-policy-allow-only-default-port
+
+  ## `system`
+
+  - ksp-django-cve-2021-31542
+
+  - ksp-django-hardening-rule-audit-tcp-connection-from-pod
+
+  - ksp-django-hardening-rule-audit-django-admin-check
+
+  - ksp-django-hardening-rule-audit-django-admin-dbshell
+
+  - ksp-django-hardening-rule-audit-django-admin-dumpdata
+
+  - ksp-django-hardening-rule-audit-django-admin-inspectdb
+
+  - ksp-django-hardening-rule-audit-pip
+
+  - ksp-django-hardening-rule-audit-python-cache
+
+  - ksp-django-hardening-rule-audit-settings-file
+
+  - ksp-django-hardening-rule-audit-urlconf-file

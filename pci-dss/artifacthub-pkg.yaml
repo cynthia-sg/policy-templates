@@ -1,0 +1,63 @@
+# Artifact Hub package metadata file
+version: 0.1.0
+name: pci-dss
+displayName: PCI DSS
+createdAt: 2022-05-26T00:00:00Z
+description: Policies based on input from PCI DSS
+category: security
+license: Apache-2.0
+homeURL: https://github.com/kubearmor/policy-templates/tree/main/pci-dss
+keywords:
+  - kubearmor
+  - policy
+  - pci dss
+links:
+  - name: Source
+    url: https://github.com/kubearmor/policy-templates/tree/main/pci-dss
+changes:
+  - kind: added
+    description: Initial release
+provider:
+  name: KubeArmor community
+readme: |-
+  This package contains the following policies:
+
+  ## `network`
+
+  - cnp-egress-pci-dss-1.2.3-block-cardholder-data-over-internet
+
+  do not allow direct connection outbound between cardholder to internet
+
+  - cnp-pci-dss-1.3.3-egress
+
+  This policy will allow outbound connection using kube-dns in port 53
+
+  - cnp-pci-dss-1.3.3-ingress
+
+  This policy will allow the inbound connection
+
+  - cnp-pci-dss-7.2.3-egress-default-deny
+
+  Egress default deny. An endpoint can be put into the default deny mode at egress
+
+  - cnp-pci-dss-10-track-and-monitor-all-access-to-network-resources-and-cardholder-data
+
+  Monitor Network Resources
+
+  ## `system`
+
+  - ksp-pci-dss-2
+
+  - ksp-pci-dss-3
+
+  - ksp-pci-dss-10-2-5
+
+  - ksp-pci-dss-7
+
+  - ksp-pci-dss-8-audit-utmp-file
+
+  - ksp-pci-dss-8-database-log-cannot-be-modified
+
+  - ksp-pci-dss-10.2.1-audit-user-details
+
+  - ksp-pci-dss-10.2.3-access-to-all-audit-log-paths

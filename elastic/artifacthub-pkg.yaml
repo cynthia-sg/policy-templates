@@ -1,0 +1,60 @@
+# Artifact Hub package metadata file
+version: 0.1.0
+name: elastic
+displayName: Elasticsearch
+createdAt: 2022-08-23T00:00:00Z
+description: Policies that protect Elasticsearch clusters
+category: security
+license: Apache-2.0
+homeURL: https://github.com/kubearmor/policy-templates/tree/main/elastic
+keywords:
+  - kubearmor
+  - policy
+  - elasticsearch
+  - elastic
+links:
+  - name: Source
+    url: https://github.com/kubearmor/policy-templates/tree/main/elastic
+changes:
+  - kind: added
+    description: Initial release
+provider:
+  name: KubeArmor community
+readme: |-
+  This package contains the following policies:
+
+  ## `network`
+
+  - cnp-allow-only-default-elastic-ports
+
+  To block all ports except 9200 and 9300 in elastic pod
+
+  - cnp-allow-only-kibana-elastic-connections
+
+  Allow kibana to only connect to elastic search
+
+  - cnp-egress-allow-only-internal-connection-elastic
+
+  To block all external connections from elastic pod
+
+  - cnp-ingress-allow-only-internal-connection-elastic
+
+  To block all external connections to elastic pod
+
+  ## `system`
+
+  - ksp-elastic-cve-2021-22145
+
+  - ksp-elastic-exposed-panel
+
+  - ksp-audit-elasticsearch-bash-spawn
+
+  - ksp-audit-elasticsearch-cve-2019-7609
+
+  - ksp-audit-elasticsearch-indices
+
+  - ksp-audit-elasticsearch-log-file-access
+
+  - ksp-audit-elasticsearch-network-access
+
+  - ksp-audit-kibana-network-access

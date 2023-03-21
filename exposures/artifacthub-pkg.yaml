@@ -1,0 +1,86 @@
+# Artifact Hub package metadata file
+version: 0.1.0
+name: exposures
+displayName: Exposures
+createdAt: 2022-06-08T00:00:00Z
+description: Policies that cover some common exposures
+category: security
+license: Apache-2.0
+homeURL: https://github.com/kubearmor/policy-templates/tree/main/exposures
+keywords:
+  - kubearmor
+  - policy
+links:
+  - name: Source
+    url: https://github.com/kubearmor/policy-templates/tree/main/exposures
+changes:
+  - kind: added
+    description: Initial release
+provider:
+  name: KubeArmor community
+readme: |-
+  This package contains the following policies:
+
+  ## `configs`
+
+  - cnp-ingress-deny-apache-perl-status-on-public-web
+
+  Deny the /perl-status endpoint by whitelisting all other http rules
+
+  - hsp-config-server-private-keys
+
+  - ksp-airflow-config-block
+
+  - ksp-bower-json-logs
+
+  - ksp-cache-file-block
+
+  - ksp-config-server-private-keys
+
+  - ksp-deny-qdpm-info-leak-on-public-web
+
+  - ksp-git-config-files-block
+
+  - ksp-htpasswd-detection
+
+  - ksp-httpd-config-file-block
+
+  - ksp-laravel-env-config-block
+
+  - ksp-nginx-config-block
+
+  - ksp-owncloud-config-disclosure
+
+  - ksp-robomongo-credential-disclosure
+
+  - ksp-samba-config-file-disclosure
+
+  - ksp-svnserve-config-file-block
+
+  - ksp-thumbsdb-disclosure-block
+
+  - ksp-yii-debugger-info
+
+  - ksp-zend-config-file
+
+  ## `info`
+
+  - ksp-clockwork-php-page
+
+  - ksp-block-squid-reports
+
+  - ksp-saia-web-server-info
+
+  ## `logs`
+
+  - cnp-ingress-deny-dotnet-trace-on-public-web
+
+  dotnet specific policy to deny the /Trace.axd endpoint by whitelisting all other http rules
+
+  - ksp-block-logs-common-web-sever
+
+  - ksp-laravel-log-file
+
+  - ksp-npm-debug-log-file
+
+  - ksp-railsdevelopment-log-file-block

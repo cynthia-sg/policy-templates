@@ -1,0 +1,29 @@
+# Artifact Hub package metadata file
+version: 0.1.0
+name: ransomware
+displayName: Ransomware
+createdAt: 2022-04-11T00:00:00Z
+description: Policies that cover some ransomware
+category: security
+license: Apache-2.0
+homeURL: https://github.com/kubearmor/policy-templates/tree/main/ransomware
+keywords:
+  - kubearmor
+  - policy
+  - ransomware
+links:
+  - name: Source
+    url: https://github.com/kubearmor/policy-templates/tree/main/ransomware
+changes:
+  - kind: added
+    description: Initial release
+provider:
+  name: KubeArmor community
+readme: |-
+  This package contains the following policies:
+
+  ## `network`
+
+  - restrict-ingress-and-egress-access
+
+  Policy to restrict ingress and egress traffic in Jupyter Notebook

@@ -1,0 +1,35 @@
+# Artifact Hub package metadata file
+version: 0.1.0
+name: java
+displayName: Java
+createdAt: 2022-05-06T00:00:00Z
+description: Policies that protect from some Java vulnerabilities
+category: security
+license: Apache-2.0
+homeURL: https://github.com/kubearmor/policy-templates/tree/main/java
+keywords:
+  - kubearmor
+  - policy
+  - java
+links:
+  - name: Source
+    url: https://github.com/kubearmor/policy-templates/tree/main/java
+changes:
+  - kind: added
+    description: Initial release
+provider:
+  name: KubeArmor community
+readme: |-
+  This package contains the following policies:
+
+  ## `system`
+
+  - ksp-block-spring4shell
+
+  - ksp-block-virus-eduapps-sexo
+
+  - ksp-block-virus-java-ghostdog
+
+  - ksp-block-virus-java-hawk
+
+  - ksp-cve-2020-9484-privilege-escalation

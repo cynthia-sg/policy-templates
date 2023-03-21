@@ -1,0 +1,37 @@
+# Artifact Hub package metadata file
+version: 0.1.0
+name: misconfiguration
+displayName: Misconfiguration
+createdAt: 2022-05-21T00:00:00Z
+description: Policies that cover some common misconfiguration issues
+category: security
+license: Apache-2.0
+homeURL: https://github.com/kubearmor/policy-templates/tree/main/misconfiguration
+keywords:
+  - kubearmor
+  - policy
+  - misconfiguration
+links:
+  - name: Source
+    url: https://github.com/kubearmor/policy-templates/tree/main/misconfiguration
+changes:
+  - kind: added
+    description: Initial release
+provider:
+  name: KubeArmor community
+readme: |-
+  This package contains the following policies:
+
+  ## `network`
+
+  - cnp-ingress-deny-apache-server-status-on-public-web
+
+  Deny the /server-status endpoint by whitelisting all other http rules
+
+  ## `system`
+
+  - ksp-apc-service-information-block
+
+  - ksp-misconfig-application-yaml
+
+  - ksp-service-password-dorking-block

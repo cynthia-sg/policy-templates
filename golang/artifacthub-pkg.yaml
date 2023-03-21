@@ -1,0 +1,50 @@
+# Artifact Hub package metadata file
+version: 0.1.0
+name: golang
+displayName: Golang
+createdAt: 2022-05-09T00:00:00Z
+description: Policies to protect Golang installations
+category: security
+license: Apache-2.0
+homeURL: https://github.com/kubearmor/policy-templates/tree/main/golang
+keywords:
+  - kubearmor
+  - policy
+  - golang
+  - go
+links:
+  - name: Source
+    url: https://github.com/kubearmor/policy-templates/tree/main/golang
+changes:
+  - kind: added
+    description: Initial release
+provider:
+  name: KubeArmor community
+readme: |-
+  This package contains the following policies:
+
+  ## `system`
+
+  - ksp-allow-golang-generic-policy-2
+
+  - ksp-allow-golang-generic-policy-3
+
+  - ksp-audit-golang-big-package
+
+  - ksp-audit-golang-cmd-go-package-cve-2022-23773
+
+  - ksp-audit-golang-elliptic-package-cve-2022-28327
+
+  - ksp-audit-golang-package-crypto
+
+  - ksp-audit-golang-pem-package-cve-2022-24675
+
+  - ksp-audit-golang-regexp-package-cve-2022-24921
+
+  - ksp-audit-golang-unmarshal
+
+  - ksp-audit-kataras-iris-golang-package
+
+  - ksp-block-golang-generic-policy-1
+
+  - ksp-go-unsafe-pointer-code-injection
